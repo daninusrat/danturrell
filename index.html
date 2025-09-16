@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dan Turèll • Kort</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="top"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top">Dan Turèll</a>
+        <ul>
+          <li><a href="#map">Kort</a></li>
+          <li><a href="#explainer">Explainer</a></li>
+          <li><a href="#reel">Reel</a></li>
+          <li><a href="#about">Om projektet</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO med baggrundsbillede + overlay (kort + infoboks) -->
+    <section class="hero" aria-label="Dan Turèlls København">
+      <img class="hero-bg" src="assets/images/hero-bg.webp" alt="" />
+      <div class="hero-overlay">
+        <div id="map" aria-label="Interaktivt kort over København"></div>
+
+        <aside id="infobox" aria-live="polite">
+          <h2>Dan Turèll’s København</h2>
+          <p class="muted">Et kort over stederne, historierne og myten i byen</p>
+          <div id="infoContent" hidden>
+            <h3 id="placeTitle"></h3>
+            <p id="placeText"></p>
+            <img id="placeImg" alt="" />
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VIDEO-SEKTION: Explainer + Reel side om side på desktop -->
+    <section id="media" class="section">
+      <div class="section-inner media-grid">
+        <!-- Explainer -->
+        <div id="explainer" class="media-item">
+          <h2>Explainer (2:00)</h2>
+          <p class="muted">Kort fortælling om Dan Turèlls København.</p>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0" title="Explainer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Reel -->
+        <div id="reel" class="media-item">
+          <h2>Reel (12s)</h2>
+          <p class="muted">Kort teaser med røg, skygger og bystøj.</p>
+          <div class="video-wrap ratio-9x16">
+            <iframe src="https://www.youtube.com/embed/REEL_ID?rel=0" title="Reel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OM PROJEKTET -->
+    <section id="about" class="section">
+      <div class="section-inner">
+        <h2>Om projektet</h2>
+        <p>Et interaktivt kort over Dan Turèlls København med udvalgte steder: Assistens Kirkegård, Onkel Dannys Plads, Istedgade, Dan Turèlls Plads og Palæ Bar. Designet med noir-æstetik, gul neon og håndtegnede linjer.</p>
+        <ul>
+          <li>Målgruppe: F2 (Uddannede unge i byen)</li>
+          <li>Hook: “Myten i hverdagen” – cigaretrøg, skrivemaskine, nat-Kbh</li>
+          <li>Teknik: SVG + JSON + simple JS events</li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="map.js" defer></script>
+    <script src="nav.js" defer></script>
+  </body>
+</html>

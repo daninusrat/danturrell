@@ -1,0 +1,32 @@
+[
+  {
+    "id": "assistens",
+    "title": "Assistens Kirkegård, Nørrebro",
+    "text": "Her ligger Dan Turèll begravet – et ikonisk sted at mindes ham.",
+    "img": "assets/images/assistens.webp"
+  },
+  {
+    "id": "onkel_dannys",
+    "title": "Onkel Dannys Plads, Kødbyen",
+    "text": "Kulturspot på Vesterbro – events, kunst og fællesskab i Dan T.-ånden.",
+    "img": "assets/images/onkel_dannys.webp"
+  },
+  {
+    "id": "istedgade",
+    "title": "Istedgade, Vesterbro",
+    "text": "Byliv, barer og kontraster – præcis det miljø Turèll ofte beskrev.",
+    "img": "assets/images/istedgade.webp"
+  },
+  {
+    "id": "dan_turells_plads",
+    "title": "Dan Turèlls Plads, Indre by",
+    "text": "Officiel plads opkaldt efter ham – et fysisk minde midt i byen.",
+    "img": "assets/images/dan_turrells_plads.webp"
+  },
+  {
+    "id": "palae",
+    "title": "Palæ Bar, Ny Adelgade",
+    "text": "Et af hans stamsteder i Indre By – hvor myten om Dan blev næret.",
+    "img": "assets/images/palae_bar.webp"
+  }
+]
