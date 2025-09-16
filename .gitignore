@@ -1,0 +1,7 @@
+.ds_store
+
+# Video og store filer
+*.mp4
+*.mov
+*.avi
+*.wav
